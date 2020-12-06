@@ -322,6 +322,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: linuxBinaries
+          path: linuxBinaries
 
       - name: Setup Haxe
         run: |
@@ -337,6 +338,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: xmldoc
+          path: xmldoc
 
       - name: Deploy to api.haxe.org
         env:
